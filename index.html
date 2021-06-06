@@ -134,7 +134,7 @@
            arr[j]= temp;
       }
       return arr;
-    }
+    }let tempWord = perWord.toLowerCase();
   
   btn.addEventListener('click' , function(){
       if(!play){
@@ -148,7 +148,8 @@
          
       }
       else{
-          let tempWord = guess.value;
+          let perWord= guess.value;
+          let tempWord = perWord.toLowerCase();
           if(tempWord == newWords){
               //console.log('correct');
               play = false;
